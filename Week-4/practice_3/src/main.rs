@@ -18,5 +18,5 @@ fn main()
 
     if base > 0.0 {
         let _area:f32 =(base * height) / 2.0;
-    }
+    } 
 }
