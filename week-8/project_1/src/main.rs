@@ -1,6 +1,6 @@
 fn main() {
     // Defining APS levels and roles using vectors
-    let aps_levels = vec![
+    let role  = vec![
         ("APS 1-2", vec!["Intern", "Paralegal", "Placement"]),
         ("APS 3-5", vec!["Administrator", "Research Assistant", "Junior Associate", "Classroom Teacher"]),
         ("APS 5-8", vec!["Senior Administrator", "PhD Candidate", "Associate", "Snr Teacher"]),
@@ -15,7 +15,7 @@ fn main() {
 
     // Accessing APS levels using iteration
     let mut aps_level = "Role not found in the APS structure.".to_string();
-    for aps in &aps_levels {
+    for &(rol, level) in &aps in &aps_levels {
         if aps.1.contains(&role) {
             aps_level = format!(
                 "Role '{}' with {} years of experience is in {}.",
